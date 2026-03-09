@@ -5,7 +5,12 @@ A full-stack web application designed to help farmers make better agricultural d
 ## Prerequisites
 - Node.js installed
 
-## 1. Setting up the Backend
+## Installation & Setup
+## 1. Clone the repository
+   git clone https://github.com/username/smart-agri.git
+   cd smart-agri
+   
+## 2. Setting up the Backend
 Open a terminal and run the following commands:
 ```bash
 cd backend
@@ -14,7 +19,7 @@ npm start
 ```
 The backend server will run on `http://localhost:5000`.
 
-## 2. Setting up the Frontend
+## 3. Setting up the Frontend
 Open another terminal and run the following commands:
 ```bash
 cd frontend
