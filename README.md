@@ -7,11 +7,11 @@ A full-stack web application designed to help farmers make better agricultural d
 
 ## Installation & Setup
 ## 1. Clone the repository
-   git clone https://github.com/username/smart-agri.git
-   cd smart-agri
-   
+```bash
+git clone https://github.com/gittog692-tech/SmartAgri.git
+cd SmartAgri
+``` 
 ## 2. Setting up the Backend
-Open a terminal and run the following commands:
 ```bash
 cd backend
 npm install
