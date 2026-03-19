@@ -31,41 +31,6 @@ This platform helps farmers by:
 
 ---
 
-## Prerequisites
-
-- Node.js installed
-
-## Installation & Setup
-
-## 1. Clone the repository
-
-```bash
-git clone https://github.com/gittog692-tech/SmartAgri.git
-cd SmartAgri
-```
-
-## 2. Setting up the Backend
-
-```bash
-cd backend
-npm install
-npm start
-```
-
-The backend server will run on `http://localhost:5000`.
-
-## 3. Setting up the Frontend
-
-Open another terminal and run the following commands:
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-The frontend vite server will typically start on `http://localhost:5173`. Open this URL in your web browser.
-
 ## 🔥 Features
 
 ### 🌾 Crop Advisor
@@ -105,4 +70,39 @@ The frontend vite server will typically start on `http://localhost:5173`. Open t
 - Farmers can post queries
 - Interaction between users
 
+---
+## Prerequisites
+
+- Node.js installed
+
+## Installation & Setup
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/gittog692-tech/SmartAgri.git
+cd SmartAgri
+```
+
+## 2. Setting up the Backend
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+The backend server will run on `http://localhost:5000`.
+
+## 3. Setting up the Frontend
+
+Open another terminal and run the following commands:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend vite server will typically start on `http://localhost:5173`. Open this URL in your web browser.
 
