@@ -1,24 +1,13 @@
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
-const fs = require('fs');
 
-const dbDirectory = process.env.RENDER_DISK_PATH || __dirname;
-const dbFileName = process.env.SQLITE_DB_NAME || 'agri.db';
-
-if (!fs.existsSync(dbDirectory)) {
-    fs.mkdirSync(dbDirectory, { recursive: true });
-}
-
-// Use Render persistent disk when available, fallback to local backend folder.
-const dbPath = path.join(dbDirectory, dbFileName);
-
+const dbPath = path.resolve(__dirname, 'agri.db');
 const db = new sqlite3.Database(dbPath, (err) => {
     if (err) {
         console.error('Error opening database', err.message);
     } else {
-        console.log(`Connected to the SQLite database at ${dbPath}.`);
+        console.log('Connected to the SQLite database.');
         db.serialize(() => {
-            db.run('PRAGMA foreign_keys = ON');
             db.run(`CREATE TABLE IF NOT EXISTS users (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 username TEXT UNIQUE,

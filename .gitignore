@@ -9,7 +9,6 @@ node_modules/
 
 # Vite
 .vite/
-frontend/dist/
 
 # Environment variables
 .env
