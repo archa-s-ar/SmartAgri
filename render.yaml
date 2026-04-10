@@ -2,7 +2,7 @@ services:
   - type: web
     name: smartagri-backend
     runtime: node
-    buildCommand: cd frontend && npm install && npm run build && cd ../backend && npm install
+    buildCommand: rm -rf backend/node_modules frontend/node_modules && cd frontend && npm ci && npm run build && cd ../backend && npm ci
     startCommand: cd backend && npm start
     healthCheckPath: /api/health
     envVars:
