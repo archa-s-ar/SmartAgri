@@ -99,6 +99,22 @@ However, the backend is currently **unavailable** due to free-tier hosting limit
 git clone https://github.com/gittog692-tech/SmartAgri.git
 cd SmartAgri
 ```
+## Environment Setup
+
+1. Go to `frontend` folder
+2. Copy `.env.example` → `.env`
+   
+   ```bash
+     cp .env.example .env
+    ```
+3. Update the API URL:
+
+   For local development:
+         VITE_API_URL=http://localhost:5000/api
+
+   For production:
+         VITE_API_URL=https://your-backend.onrender.com/api
+
 
 ## 2. Setting up the Backend
 
